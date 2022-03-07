@@ -7,31 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/custom.css">
 </head>
 
 <body class="grid">
-
-    <section class="mainSlideshow">
-        <header class="header">
-            <nav class="navigation">
-                <a href="./index.html">
-                <img class="logo" src="./assets/logo.png" alt=""></a>
-
-                <div class="menuItems">
-                    <img class="search" src="./assets/search.png" alt="">
-                    <img class="cart" src="./assets/cart.png" alt="">
-                    <img class="menu" src="./assets/menu.png" alt="">
-                </div>
-            </nav>
-        </header>
-    </section>
-    <div class="slideshow">
-        <div class="transparentNav">
-            <img class="logo" src="./assets/logo.png" alt="">
-            <img class="search" src="./assets/search.png" alt="">
-            <img class="cart" src="./assets/cart.png" alt="">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="sections/collection-template.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sections/contact.html">Contact</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="sections/about-us.html">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
+      </nav>
+
+      <div class="slideshow">
+ 
         <div class="slideshowContent">
             <h1 class="mainText">Find the best supplies.</h1>
             <p class="mainParagraph">We have what’s right for your pet.</p>
@@ -42,6 +52,7 @@
         </div>
     </div>
 
+   
 
     <div class="pageWidth">
         <div class="collectionRow">
@@ -70,6 +81,7 @@
                 </div>
             </div>
         </div>
+        <div class="sliderDesktop">
         <h2 class="homepageTitle">Must-have products</h2>
         <div class="productSlider1">
             <div class="featuredProduct">
@@ -92,7 +104,14 @@
                 <h3 class="productTitle">Product name</h3>
                 <p class="productPrice">$188 USd</p>
             </div>
+            <div class="featuredProduct">
+                <img src="C:\Users\agust\Desktop\code\webpage\assets\H66ee755673964d888096a3c0452a34b2p.webp" alt="">
+                <h3 class="productTitle">Product name</h3>
+                <p class="productPrice">$188 USd</p>
+            </div>
         </div>
+    </div>
+        <div class="sliderDesktop">
         <h2 class="homepageTitle">Get playful!</h2>
         <div class="productSlider2">
             <div class="featuredProduct">
@@ -115,8 +134,13 @@
                 <h3 class="productTitle">Product name</h3>
                 <p class="productPrice">$188 USd</p>
             </div>
+            <div class="featuredProduct">
+                <img src="C:\Users\agust\Desktop\code\webpage\assets\H66ee755673964d888096a3c0452a34b2p.webp" alt="">
+                <h3 class="productTitle">Product name</h3>
+                <p class="productPrice">$188 USd</p>
+            </div>
         </div>
-
+    </div>
     </div>
     <section class="newsletter">
         <h2>
@@ -135,26 +159,45 @@
         <p class="privacyText">
             We take privacy seriously.
         </p>
-        <img class="newsletterDog" src="./assets/newsletterdog.png" alt="">
+        <div class="newsletterDog">
+        <img src="./assets/newsletterdog.png" alt=""></div>
     </section>
     <footer class="footer">
-        <div class="footerTitle">
-        <p>
-            Shop
-        </p>
-        <img src="./assets/arrowdown.png" alt="">
-    </div>
-    <div class="footerTitle">
-        <p>
-            About
-        </p>
-        <img src="./assets/arrowdown.png" alt="">
-    </div>
-    <div class="footerTitle">
-        <p>
-Legal Stuff        </p>
-        <img src="./assets/arrowdown.png" alt="">
-    </div>
+
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+Shop            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Pet Toys</a></li>
+              <li><a class="dropdown-item" href="#">Dry food</a></li>
+              <li><a class="dropdown-item" href="#">Pet Apparel</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+Legal Stuff            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Terms of Service</a></li>
+              <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="#">Shipping Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+About            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">Testimonials</a></li>
+            </ul>
+          </div>
+
+
+
+
     <div class="socialMedia">
     <p class="socialParagraph"> 
         Follow us on social media
@@ -163,11 +206,52 @@ Legal Stuff        </p>
     <img src="./assets/instagramIcon.png" alt="">
 
     <p class="copyright"> 
-        PetNow Copyright 2022 All Rights Reserved 
+        PetNow Copyright 2022 All Rigths Reserved
      </p>
     </div>
     </footer>
 
+    <footer class="footerDesktop">
+        <div class="container">
+
+            <div class="row">
+<div class="col">
+    <h2>Shop</h2>
+    <p>Pet Toys</p>
+    <p>Dry Food</p>
+    <p>Pet Apparel</p>
+</div>
+<div class="col">
+    <h2>Legal Stuff</h2>
+    <p>Terms of Service</p>
+    <p>Privacy Policy</p>
+    <p>Shipping Policy</p>
+</div>
+<div class="col">
+    <h2>About</h2>
+    <p>About Us</p>
+    <p>Contact Us</p>
+    <p>Testimonials</p>
+</div>
+</div>
+
+    <div class="socialMedia--desktop">
+    <p class="socialParagraph--desktop"> 
+        Follow us on social media
+    </p>
+    <img src="./assets/facebookIcon.png" alt="">
+    <img src="./assets/instagramIcon.png" alt="">
+
+    <p class="copyright"> 
+        PetNow Copyright 2022 All Rigths Reserved
+     </p>
+    </div>
+</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
