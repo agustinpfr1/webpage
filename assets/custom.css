@@ -3,7 +3,26 @@
 * {
   margin: 0;
   padding: 0; }
-
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(61, 61, 61);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 /* CUSTOM FONTS */
 @font-face {
   font-family: 'Gilroy';
@@ -23,11 +42,11 @@
 
 /* END CUSTOM FONTS */
 body {
-  font-family: "Gilroy";
+  font-family: 'Gilroy' !important;
   grid-template-columns: auto; }
 
 .header {
-  background-color: #000000;
+  background-color: black;
   height: 99px;
   top: 0;
   display: flex;
@@ -43,7 +62,9 @@ body {
   background-size: cover;
   gap: 6px;
   background-repeat: no-repeat;
-  grid-area: slideshow; }
+  grid-area: slideshow; 
+}
+
 
 @media screen and (max-width: 720px) {
   .buttonDesktop, .transparentNav {
@@ -57,7 +78,7 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    color: #000000;
+    color: black;
     background-color: white;
     padding: 5px 20px;
     font-family: Gilroy;
@@ -74,10 +95,9 @@ body {
   .slideshow {
     background-image: url(./slideshow-desktop.png);
     background-size: cover;
-    min-height: 1200px;
+    min-height: 850px;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
     background-position: center; }
-  /* SASS SINTAXIS */
   .header {
     display: none;
     grid-area: header; }
@@ -135,7 +155,7 @@ body {
 
 .block a {
   text-decoration: none;
-  color: #000000;
+  color: black;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -212,7 +232,7 @@ body {
   color: white; }
 
 .button {
-  color: #000000;
+  color: black;
   background-color: white;
   padding: 5px 20px;
   max-width: fit-content;
@@ -248,7 +268,7 @@ body {
 .newsletter {
   height: 340px;
   padding: 0px 15px;
-  background-color: #000000;
+  background-color: black;
   grid-area: newsletter;
   animation: 0.5s ease-out 0s 1 slideInFromLeft; }
 
@@ -291,19 +311,15 @@ body {
   text-align: center;
   margin-top: 15px; }
 
-.newsletterDog {
-  min-width: 69px;
-  min-height: 69px;
-  margin: 5% 40%; }
-
 .footer {
   height: 350px;
-  padding: 0px 28px;
+  padding: auto 28px;
   background-image: url(./footerBackground.png);
   background-position: right;
   bottom: 0;
   grid-area: footer;
-  padding-top: 68px; }
+  padding-top: 68px; 
+}
 
 .footerTitle {
   display: flex;
@@ -335,7 +351,7 @@ body {
   padding-bottom: 15px; }
 
 .socialMedia {
-  margin: 16% 10%;
+  margin: 5% 10%;
   text-align: center; }
 
 .copyright {
@@ -345,10 +361,33 @@ body {
   line-height: 18px;
   padding-top: 20px; }
 
+.aboutUs {
+  margin-top: 52px; }
+
+.aboutUs h3 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 33px; }
+
+.aboutUs h1 {
+  text-align: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  font-size: 36px;
+  margin-bottom: 32px; }
+
 .firstRow {
   text-align: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column; 
+  animation: 1s ease-out 0s 1 slideInFromLeft; 
+}
 
 .firstRow img {
   margin-bottom: 12px; }
@@ -365,9 +404,11 @@ body {
 .secondRow {
   text-align: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column; 
+  animation: 1s ease-out 0s 1 slideInFromLeft; 
+}
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1190px) {
   .secondRow {
     flex-direction: row; }
   .firstRow {
@@ -392,7 +433,7 @@ body {
     transform: translateX(0); } }
 
 .carousel-inner {
-  background: #000000;
+  background: black;
   overflow: hidden; }
 
 .carousel-item img {
@@ -403,3 +444,139 @@ body {
 .carousel-inner {
   min-height: 450px;
   max-height: 950px; }
+
+  @media only screen and (min-width: 1200px) {
+    body > div.pageWidth > div > div > div > img {
+      height: 384px;
+      width: 352px;
+      
+    }
+    .sliderDesktop {
+      margin: 5% 10%;
+    }
+
+    .productSlider1, 
+    .productSlider2 {
+      height: fit-content;
+    }
+
+    .collectionBlock1,
+    .collectionBlock2,
+    .collectionBlock3 {
+      width: 439px;
+      height: 445px;
+    }
+    .firstRow p,
+    .secondRow p
+    {
+      max-width: 400px;
+    }
+    .firstRow,
+    .secondRow {
+      justify-content: center;
+      gap: 100px;
+    }
+
+    body > div.pageWidth > div.collectionRow {
+      gap: 30px;
+
+    }
+
+
+.slideshow {
+  max-height: 750px;
+}
+body > div.slideshow > div.buttonDesktop {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 5.3%;
+}
+
+}
+.newsletterDog {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+} 
+
+@media only screen and (min-width: 750px) {
+  .footer {
+    display: none;
+  }
+  .aboutBody {
+    margin: 0 20%;
+  }
+ 
+  body > section > h2,
+  body > section > p:nth-child(2) {
+    text-align: center;
+  }
+  .signup {
+    justify-content: center;
+  }
+  .newsletterDog {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+  }
+  .newsletterDog img {
+  width: 105px;
+height: 95px;
+}
+
+}
+@media only screen and (max-width: 750px) {
+  .footerDesktop {
+    display: none;
+  }
+}
+
+body > footer.footerDesktop  {
+  padding: 50px;
+  background-image: url(./footerBackground.png);
+  background-position: right;
+  bottom: 0;
+  background-size: cover;
+  
+}
+
+.socialMedia--desktop {
+  text-align: center;
+  margin: 20px;
+}
+
+.socialParagraph--desktop {
+  padding: 0px;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 550;
+}
+
+body > footer.footerDesktop > div > div.row > div > h2,
+body > div.pageWidth > div:nth-child(2) > h2,
+body > div.pageWidth > div:nth-child(3) > h2 {
+  font-weight: 600;
+}
+
+.btn-secondary {
+  color: black;
+  background-color: transparent; 
+  border-color: transparent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+body > footer.footer > div {
+text-align: center;
+}
+
