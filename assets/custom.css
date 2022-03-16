@@ -683,3 +683,9 @@ body > div.pageWidth > div:nth-child(3) > h2 {
 
 body > footer.footer > div {
   text-align: center; }
+
+body > footer.footerDesktop > div > div.row > div:nth-child(3) p, body > footer.footerDesktop > div > div.row > div:nth-child(3) h2 {
+  text-align: right; }
+
+body > footer.footerDesktop > div > div.row > div:nth-child(2) p, body > footer.footerDesktop > div > div.row > div:nth-child(2) h2 {
+  text-align: center; }
