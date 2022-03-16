@@ -1,28 +1,173 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+.aboutUs {
+  margin-top: 52px; }
+  .aboutUs h3 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px; }
+  .aboutUs h1 {
+    text-align: center;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    font-size: 36px;
+    margin-bottom: 32px; }
+
+.dogAbout, .catAbout {
+  transition: transform 500ms; }
+
+.dogAbout:hover, .catAbout:hover {
+  transform: translateY(-10px); }
+
+.catAbout {
+  height: 90%;
+  width: 90%; }
+
+.dogAbout, .catAbout {
+  height: 90%;
+  width: 90%; }
+
+.shop {
+  margin-top: 52px; }
+  .shop h3 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px; }
+  .shop h1 {
+    text-align: center;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    font-size: 36px;
+    margin-bottom: 32px; }
+
+#contactForm {
+  margin: 0 auto 50px;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */ }
+  #contactForm input[type=text],
+  #contactForm select,
+  #contactForm textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical; }
+  #contactForm input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+  #contactForm input[type=submit]:hover {
+    background-color: #45a049; }
+  #contactForm .container {
+    border-radius: 5px;
+    padding: 20px; }
+
+#contactForm > div > form > label {
+  font-weight: 600; }
+
+@media only screen and (min-width: 768px) {
+  .contactParent {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 10%; } }
+
+@media only screen and (max-width: 768px) {
+  .contactParent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10%; } }
+
+.box--wholesale,
+.box--press,
+.box--customer {
+  padding: 30px;
+  max-width: fit-content; }
+  .box--wholesale p,
+  .box--press p,
+  .box--customer p {
+    text-align: center; }
+  .box--wholesale h3,
+  .box--press h3,
+  .box--customer h3 {
+    text-align: center;
+    font-weight: bold; }
+  .box--wholesale p span,
+  .box--press p span,
+  .box--customer p span {
+    display: block; }
+
+#contactForm {
+  animation: 0.5s ease-out 0s 1 slideInFromLeft; }
+
+/* MAP AND EACH */
+.box--customer {
+  background-color: rgba(198, 246, 255, 0.6);
+  margin-bottom: 30px; }
+
+.box--wholesale {
+  background-color: rgba(182, 255, 198, 0.6);
+  margin-bottom: 30px; }
+
+.box--press {
+  background-color: rgba(255, 254, 182, 0.6);
+  margin-bottom: 30px; }
+
 * {
   margin: 0;
   padding: 0; }
-  /* width */
-  ::-webkit-scrollbar {
-    width: 3px;
-    height: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(61, 61, 61);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3d3d3d; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
 /* CUSTOM FONTS */
 @font-face {
   font-family: 'Gilroy';
@@ -62,9 +207,7 @@ body {
   background-size: cover;
   gap: 6px;
   background-repeat: no-repeat;
-  grid-area: slideshow; 
-}
-
+  grid-area: slideshow; }
 
 @media screen and (max-width: 720px) {
   .buttonDesktop, .transparentNav {
@@ -127,7 +270,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .collectionRow {
-    flex-direction: row; } }
+    flex-direction: row; }
+  #contactForm {
+    max-width: 50%; } }
 
 .collectionBlock1,
 .collectionBlock2,
@@ -318,8 +463,7 @@ body {
   background-position: right;
   bottom: 0;
   grid-area: footer;
-  padding-top: 68px; 
-}
+  padding-top: 68px; }
 
 .footerTitle {
   display: flex;
@@ -385,9 +529,8 @@ body {
 .firstRow {
   text-align: center;
   display: flex;
-  flex-direction: column; 
-  animation: 1s ease-out 0s 1 slideInFromLeft; 
-}
+  flex-direction: column;
+  animation: 1s ease-out 0s 1 slideInFromLeft; }
 
 .firstRow img {
   margin-bottom: 12px; }
@@ -404,9 +547,8 @@ body {
 .secondRow {
   text-align: center;
   display: flex;
-  flex-direction: column; 
-  animation: 1s ease-out 0s 1 slideInFromLeft; 
-}
+  flex-direction: column;
+  animation: 1s ease-out 0s 1 slideInFromLeft; }
 
 @media screen and (min-width: 1190px) {
   .secondRow {
@@ -445,107 +587,73 @@ body {
   min-height: 450px;
   max-height: 950px; }
 
-  @media only screen and (min-width: 1200px) {
-    body > div.pageWidth > div > div > div > img {
-      height: 384px;
-      width: 352px;
-      
-    }
-    .sliderDesktop {
-      margin: 5% 10%;
-    }
+@media only screen and (min-width: 1200px) {
+  body > div.pageWidth > div > div > div > img {
+    height: 384px;
+    width: 352px; }
+  .sliderDesktop {
+    margin: 5% 10%; }
+  .productSlider1,
+  .productSlider2 {
+    height: fit-content; }
+  .collectionBlock1,
+  .collectionBlock2,
+  .collectionBlock3 {
+    width: 439px;
+    height: 445px; }
+  .firstRow p,
+  .secondRow p {
+    max-width: 400px; }
+  .firstRow,
+  .secondRow {
+    justify-content: center;
+    gap: 100px; }
+  body > div.pageWidth > div.collectionRow {
+    gap: 30px; }
+  .slideshow {
+    max-height: 750px; }
+  body > div.slideshow > div.buttonDesktop {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 5.3%; } }
 
-    .productSlider1, 
-    .productSlider2 {
-      height: fit-content;
-    }
-
-    .collectionBlock1,
-    .collectionBlock2,
-    .collectionBlock3 {
-      width: 439px;
-      height: 445px;
-    }
-    .firstRow p,
-    .secondRow p
-    {
-      max-width: 400px;
-    }
-    .firstRow,
-    .secondRow {
-      justify-content: center;
-      gap: 100px;
-    }
-
-    body > div.pageWidth > div.collectionRow {
-      gap: 30px;
-
-    }
-
-
-.slideshow {
-  max-height: 750px;
-}
-body > div.slideshow > div.buttonDesktop {
-  display: flex;
-  justify-content: flex-start;
-  margin: 0 5.3%;
-}
-
-}
 .newsletterDog {
   display: flex;
   width: 100%;
-  justify-content: center;
-
-} 
+  justify-content: center; }
 
 @media only screen and (min-width: 750px) {
   .footer {
-    display: none;
-  }
+    display: none; }
   .aboutBody {
-    margin: 0 20%;
-  }
- 
+    margin: 0 20%; }
   body > section > h2,
   body > section > p:nth-child(2) {
-    text-align: center;
-  }
+    text-align: center; }
   .signup {
-    justify-content: center;
-  }
+    justify-content: center; }
   .newsletterDog {
     display: flex;
     width: 100%;
-    justify-content: center;
-
-  }
+    justify-content: center; }
   .newsletterDog img {
-  width: 105px;
-height: 95px;
-}
+    width: 105px;
+    height: 95px; } }
 
-}
 @media only screen and (max-width: 750px) {
   .footerDesktop {
-    display: none;
-  }
-}
+    display: none; } }
 
-body > footer.footerDesktop  {
+body > footer.footerDesktop {
   padding: 50px;
   background-image: url(./footerBackground.png);
   background-position: right;
   bottom: 0;
-  background-size: cover;
-  
-}
+  background-size: cover; }
 
 .socialMedia--desktop {
   text-align: center;
-  margin: 20px;
-}
+  margin: 20px; }
 
 .socialParagraph--desktop {
   padding: 0px;
@@ -555,28 +663,23 @@ body > footer.footerDesktop  {
   font-weight: bold;
   font-size: 26px;
   text-transform: uppercase;
-  font-weight: 550;
-}
+  font-weight: 550; }
 
 body > footer.footerDesktop > div > div.row > div > h2,
 body > div.pageWidth > div:nth-child(2) > h2,
 body > div.pageWidth > div:nth-child(3) > h2 {
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 .btn-secondary {
   color: black;
-  background-color: transparent; 
+  background-color: transparent;
   border-color: transparent;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
-}
+  text-align: center; }
 
 body > footer.footer > div {
-text-align: center;
-}
-
+  text-align: center; }
