@@ -92,21 +92,12 @@
 #contactForm > div > form > label {
   font-weight: 600; }
 
-@media only screen and (min-width: 768px) {
-  .contactParent {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    gap: 10%; } }
-
-@media only screen and (max-width: 768px) {
-  .contactParent {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    gap: 10%; } }
+.contactParent {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 10%;
+  flex-wrap: wrap; }
 
 .box--wholesale,
 .box--press,

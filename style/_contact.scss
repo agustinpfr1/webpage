@@ -50,25 +50,15 @@
 
 }
 
-@media only screen and (min-width: 768px) {
-    .contactParent {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        gap: 10%;
-    }
-}
 
-@media only screen and (max-width: 768px) {
     .contactParent {
         display: flex;
-        flex-direction: column;
         margin: auto;
-        align-items: center;
         justify-content: center;
         gap: 10%;
+        flex-wrap: wrap;
     }
-}
+
 
 .box--wholesale,
 .box--press,
@@ -101,7 +91,8 @@
 
 $contact: (customer: rgba(198, 246, 255, 0.6),
     wholesale: rgba(182, 255, 198, 0.6),
-    press: rgba(255, 254, 182, 0.6));
+    press: rgba(255, 254, 182, 0.6)
+    );
 
 @each $contactBox,
 $color in $contact {
