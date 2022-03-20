@@ -33,24 +33,108 @@
   height: 90%;
   width: 90%; }
 
-.shop {
-  margin-top: 52px; }
-  .shop h3 {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+.shop h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 33px; }
+
+.shop h1 {
+  text-align: center;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  font-size: 36px;
+  margin-bottom: 32px; }
+
+.sectionBanner {
+  background-image: url(../assets/collection-background.png);
+  background-size: cover;
+  background-repeat: none;
+  height: 556px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .sectionBanner h3,
+  .sectionBanner h1,
+  .sectionBanner a {
+    color: white; }
+
+.productList--collection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  grid-area: products; }
+  .productList--collection .featuredProduct1 img {
+    width: 310px;
+    height: 334px; }
+  .productList--collection h3 {
+    text-align: left; }
+
+.filter {
+  grid-area: filter; }
+  .filter h2 {
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 33px; }
-  .shop h1 {
-    text-align: center;
-    font-family: "Gilroy";
+    font-weight: 400;
+    font-size: 48px; }
+
+@media screen and (min-width: 720px) {
+  .categoryPage {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "filter products";
+    margin: 50px 50px; }
+  .productList--collection {
+    justify-content: flex-start; } }
+
+.stock {
+  display: flex;
+  gap: 20px;
+  padding: 15px 0; }
+  .stock h3 {
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 59px;
-    font-size: 36px;
-    margin-bottom: 32px; }
+    font-weight: 400;
+    font-size: 28px; }
+
+.range {
+  max-width: 260px;
+  padding: 15px 0; }
+  .range h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px; }
+
+.priceStart {
+  border: 0.5px solid #737373;
+  width: 131px;
+  height: 44px;
+  background: #FBFBFB; }
+  .priceStart p {
+    color: #A8A8A8;
+    padding: 9px 101px 8px 7px; }
+
+.priceRangePrice {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px; }
+
+.petType h3 {
+  text-align: left;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px; }
 
 #contactForm {
   margin: 0 auto 50px;
@@ -134,6 +218,58 @@
   background-color: rgba(255, 254, 182, 0.6);
   margin-bottom: 30px; }
 
+.colorSwatch {
+  display: flex;
+  gap: 12px; }
+  .colorSwatch .colorPink {
+    height: 45px;
+    width: 45px;
+    background-color: #F6BBE6;
+    border-radius: 100%; }
+  .colorSwatch .colorBlue {
+    height: 45px;
+    width: 45px;
+    background-color: #6271FB;
+    border-radius: 100%; }
+  .colorSwatch .colorYellow {
+    height: 45px;
+    width: 45px;
+    background-color: #ECFF17;
+    border-radius: 100%; }
+  .colorSwatch .colorRed {
+    height: 45px;
+    width: 45px;
+    background-color: #FF1B1B;
+    border-radius: 100%; }
+
+/* PLUS MINUS */
+span {
+  cursor: pointer; }
+
+.number {
+  margin: 100px; }
+
+.minus, .plus {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center; }
+
+input {
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -208,6 +344,7 @@ body {
   .button {
     display: none; }
   .buttonBigger {
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -227,7 +364,7 @@ body {
 
 @media screen and (min-width: 720px) {
   .slideshow {
-    background-image: url(./slideshow-desktop.png);
+    background-image: url(./slideshow-desktop.jpg);
     background-size: cover;
     min-height: 850px;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
@@ -680,3 +817,15 @@ body > footer.footerDesktop > div > div.row > div:nth-child(3) p, body > footer.
 
 body > footer.footerDesktop > div > div.row > div:nth-child(2) p, body > footer.footerDesktop > div > div.row > div:nth-child(2) h2 {
   text-align: center; }
+
+.marginTop {
+  margin-top: 52px; }
+
+.featuredProduct1, .featuredProduct {
+  cursor: pointer; }
+  .featuredProduct1 h3, .featuredProduct h3 {
+    transition: 500ms;
+    border-bottom: 1px solid transparent;
+    max-width: fit-content; }
+  .featuredProduct1 h3:hover, .featuredProduct h3:hover {
+    border-bottom: 1px solid black; }
