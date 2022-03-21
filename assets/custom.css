@@ -85,7 +85,7 @@
     font-weight: 400;
     font-size: 48px; }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1400px) {
   .categoryPage {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -246,21 +246,18 @@
 span {
   cursor: pointer; }
 
-.number {
-  margin: 100px; }
-
-.minus, .plus {
+.number .minus, .number .plus {
   width: 20px;
   height: 20px;
   background: #f2f2f2;
   border-radius: 4px;
-  padding: 8px 5px 8px 5px;
+  padding: 0px;
   border: 1px solid #ddd;
   display: inline-block;
   vertical-align: middle;
   text-align: center; }
 
-input {
+.number input {
   height: 34px;
   width: 100px;
   text-align: center;
@@ -269,6 +266,113 @@ input {
   border-radius: 4px;
   display: inline-block;
   vertical-align: middle; }
+
+.productMedia {
+  grid-area: media; }
+
+.productInfo {
+  grid-area: details;
+  padding: 5%; }
+
+@media screen and (min-width: 768px) {
+  .productPage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "media details";
+    margin: 50px 10%; } }
+
+.mainPhoto {
+  width: 100%;
+  padding: 0 50px 20px 0; }
+
+@media screen and (max-width: 768px) {
+  .mainPhoto {
+    padding: 0 0px 20px 0; } }
+
+.breadcrumbs {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px; }
+  .breadcrumbs a {
+    color: #000000; }
+
+.productTitle {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800; }
+
+.price {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px; }
+
+.colorSwatch, .number {
+  padding-bottom: 32px; }
+
+.addtoCart {
+  max-width: 524px;
+  min-width: fit-content;
+  height: 72px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .addtoCart p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    padding-top: 18px; }
+
+.bold {
+  font-weight: bold; }
+
+.buyNow {
+  margin: 18px 0;
+  max-width: 524px;
+  min-width: fit-content;
+  height: 72px;
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .buyNow p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 18px; }
+
+.recommended {
+  margin: 0 10%; }
+  .recommended h2 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    color: #000000; }
+
+@media screen and (min-width: 1200px) {
+  .bigSize {
+    height: 384px;
+    width: 352px; } }
+
+@media screen and (max-width: 768px) {
+  .bigSize {
+    height: 244px;
+    width: auto; } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .bigSize {
+    height: 264px;
+    width: auto; } }
 
 * {
   margin: 0;
@@ -464,10 +568,6 @@ body {
   justify-content: center;
   align-items: center;
   display: inline-block; }
-
-.featuredProduct img {
-  height: 254px;
-  width: auto; }
 
 .featuredProduct::after {
   flex: 0 0 12px; }

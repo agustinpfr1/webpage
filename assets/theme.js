@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
