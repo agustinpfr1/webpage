@@ -84,6 +84,12 @@ body {
   .buttonDesktop, .transparentNav {
     display: none; } }
 
+    .featuredProduct1, .featuredProduct  {
+      img {
+width: 254px;
+height: 256px;}
+    }
+
 @media screen and (min-width: 720px) {
   .button {
     display: none; }
