@@ -640,3 +640,35 @@ h3:hover {
   border-bottom: 1px solid black;
 }
 }
+
+.legalSection {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.footerDesktop {
+  .container {
+    .row {
+      .col {
+        a {
+          color: black;
+          text-decoration: none;
+        }
+        a:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+.categoryPage {
+  max-width: 1440px;
+  margin: 60px auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .filter {
+    display: none;
+  }
+}
