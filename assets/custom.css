@@ -1052,7 +1052,7 @@ body > footer.footerDesktop > div > div.row > div:nth-child(2) p, body > footer.
 
 .categoryPage {
   max-width: 1440px;
-  margin: 60px auto; }
+  margin: 20px auto; }
 
 @media only screen and (max-width: 1400px) {
   .filter {
@@ -1066,3 +1066,8 @@ body > footer.footerDesktop > div > div.row > div:nth-child(2) p, body > footer.
 
 .productPrice {
   text-transform: uppercase; }
+
+.filterMobile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; }
