@@ -1075,3 +1075,7 @@ body > footer.footerDesktop > div > div.row > div:nth-child(2) p, body > footer.
   display: flex;
   justify-content: center;
   margin-bottom: 30px; }
+
+@media only screen and (min-width: 1400px) {
+  .filterMobile {
+    display: none; } }
