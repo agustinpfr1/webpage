@@ -99,7 +99,13 @@ $p-font: 'Poppins', sans-serif;
     
 }
 
-
+@media only screen and (max-width: 480px) {
+    .sectionBanner--apparel {
+        background-image: url(../assets/apparelMobile.png);
+}
+.sectionBanner--snacks {
+    background-image: url(../assets/snackMobile.png);
+}}
 .productList--collection {
     display: flex;
     flex-wrap: wrap;
