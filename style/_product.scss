@@ -34,6 +34,12 @@ gap: 12px;
     border-radius: 100%;
 }
 
+.colorGrey {
+    @include size ($height, $width);
+    background-color: gray;
+    border-radius: 100%;
+}
+
 }
 
 /* PLUS MINUS */
@@ -192,3 +198,19 @@ color: #000000;
                 height: 264px;
                 width: auto;
             }}
+
+
+            .thumbnail {
+                width: 126px;
+                height: 126px;
+            }
+            .arrowAnimation {
+transition: 500ms;             
+}
+            .animationText:hover > .arrowAnimation {
+                transform: translateX(10px)
+            }
+
+            .arrowAnimation {
+                display: inline-block; 
+            }

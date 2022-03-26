@@ -42,6 +42,63 @@ $p-font: 'Poppins', sans-serif;
     
 }
 
+.sectionBanner--toys {
+    background-image: url(../assets/bannerToys.jpeg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 556px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h3,
+    h1,
+    a {
+        color: white;
+    }
+    
+}
+
+.sectionBanner--snacks {
+    background-image: url(../assets/snackBanner.webp);
+    background-size: cover;
+    background-repeat: none;
+    background-position: bottom;
+    height: 556px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h3,
+    h1,
+    a {
+        color: white;
+    }
+    
+}
+
+.sectionBanner--apparel {
+    background-image: url(../assets/apparelBanner.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 556px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h3,
+    h1,
+    a {
+        color: white;
+    }
+    
+}
+
 .productList--collection {
     display: flex;
     flex-wrap: wrap;

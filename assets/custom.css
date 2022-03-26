@@ -65,6 +65,51 @@
   .sectionBanner a {
     color: white; }
 
+.sectionBanner--toys {
+  background-image: url(../assets/bannerToys.jpeg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 556px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .sectionBanner--toys h3,
+  .sectionBanner--toys h1,
+  .sectionBanner--toys a {
+    color: white; }
+
+.sectionBanner--snacks {
+  background-image: url(../assets/snackBanner.webp);
+  background-size: cover;
+  background-repeat: none;
+  background-position: bottom;
+  height: 556px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .sectionBanner--snacks h3,
+  .sectionBanner--snacks h1,
+  .sectionBanner--snacks a {
+    color: white; }
+
+.sectionBanner--apparel {
+  background-image: url(../assets/apparelBanner.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 556px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .sectionBanner--apparel h3,
+  .sectionBanner--apparel h1,
+  .sectionBanner--apparel a {
+    color: white; }
+
 .productList--collection {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +286,11 @@
     width: 45px;
     background-color: #FF1B1B;
     border-radius: 100%; }
+  .colorSwatch .colorGrey {
+    height: 45px;
+    width: 45px;
+    background-color: gray;
+    border-radius: 100%; }
 
 /* PLUS MINUS */
 span {
@@ -373,6 +423,19 @@ span {
   .bigSize {
     height: 264px;
     width: auto; } }
+
+.thumbnail {
+  width: 126px;
+  height: 126px; }
+
+.arrowAnimation {
+  transition: 500ms; }
+
+.animationText:hover > .arrowAnimation {
+  transform: translateX(10px); }
+
+.arrowAnimation {
+  display: inline-block; }
 
 * {
   margin: 0;
@@ -515,6 +578,9 @@ body {
     flex-direction: row; }
   #contactForm {
     max-width: 50%; } }
+
+.featuredProduct1, .filter {
+  animation: 0.5s ease-out 0s 1 slideInFromLeft; }
 
 .collectionBlock1,
 .collectionBlock2,

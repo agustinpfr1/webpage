@@ -158,7 +158,11 @@ height: 256px;}
     #contactForm {
       max-width: 50%;
   }}
+  .featuredProduct1, .filter {
 
+    animation: 0.5s ease-out 0s 1 slideInFromLeft; 
+
+  }
 .collectionBlock1,
 .collectionBlock2,
 .collectionBlock3 {
