@@ -667,6 +667,13 @@ h3:hover {
   margin: 20px auto;
 }
 
+@media only screen and (min-width: 1400px) {
+  .categoryPage {
+    margin: 60px auto;
+  }
+}
+
+
 @media only screen and (max-width: 1400px) {
   .filter {
     display: none;
