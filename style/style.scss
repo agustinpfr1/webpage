@@ -672,3 +672,15 @@ h3:hover {
     display: none;
   }
 }
+.productList--collection {
+.featuredProduct, .featuredProduct1 {
+  transition: transform .2s; 
+}
+
+.featuredProduct:hover, .featuredProduct1:hover {
+  transform: scale(1.1);
+}
+}
+.productPrice {
+  text-transform: uppercase;
+}

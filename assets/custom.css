@@ -134,7 +134,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px; }
+    font-size: 38px; }
 
 @media screen and (min-width: 1400px) {
   .categoryPage {
@@ -153,7 +153,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px; }
+    font-size: 23px; }
 
 .range {
   max-width: 260px;
@@ -162,7 +162,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px; }
+    font-size: 23px; }
 
 .priceStart {
   border: 0.5px solid #737373;
@@ -1057,3 +1057,12 @@ body > footer.footerDesktop > div > div.row > div:nth-child(2) p, body > footer.
 @media only screen and (max-width: 1400px) {
   .filter {
     display: none; } }
+
+.productList--collection .featuredProduct, .productList--collection .featuredProduct1 {
+  transition: transform .2s; }
+
+.productList--collection .featuredProduct:hover, .productList--collection .featuredProduct1:hover {
+  transform: scale(1.1); }
+
+.productPrice {
+  text-transform: uppercase; }

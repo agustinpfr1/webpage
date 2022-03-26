@@ -130,7 +130,7 @@ $p-font: 'Poppins', sans-serif;
         font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 48px;
+font-size: 38px;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -155,7 +155,7 @@ font-size: 48px;
         font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 28px;
+font-size: 23px;
     }
 }
 
@@ -167,7 +167,7 @@ font-size: 28px;
         font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 28px;
+font-size: 23px;
     }
 }
 
@@ -176,7 +176,7 @@ font-size: 28px;
     width: 131px;
     height: 44px;
     background: #FBFBFB;
-    
+
 
     p {
         color: #A8A8A8;
@@ -187,6 +187,7 @@ font-size: 28px;
 .priceRangePrice {
     display: flex;
     gap: 18px;
+
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
